@@ -94,9 +94,9 @@ function inkshop_search_default_search_api_server() {
             "boost" : "1.0"
           },
           "field_pd_type" : {
-            "table" : "search_api_db_product_display",
+            "table" : "search_api_db_product_display_field_pd_type",
             "column" : "field_pd_type_2",
-            "type" : "integer",
+            "type" : "list\\u003Cinteger\\u003E",
             "boost" : "1.0"
           },
           "title_field" : {
@@ -150,9 +150,9 @@ function inkshop_search_default_search_api_server() {
             "boost" : "1.0"
           },
           "field_pd_type:name" : {
-            "table" : "search_api_db_product_display",
+            "table" : "search_api_db_product_display_field_pd_type_name",
             "column" : "field_pd_type_name",
-            "type" : "string",
+            "type" : "list\\u003Cstring\\u003E",
             "boost" : "1.0"
           },
           "field_pd_kampagne:name" : {
