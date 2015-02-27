@@ -1426,83 +1426,6 @@ function inkshop_search_facetapi_default_facet_settings() {
   $facet = new stdClass();
   $facet->disabled = FALSE; /* Edit this to true to make a default facet disabled initially */
   $facet->api_version = 1;
-  $facet->name = 'search_api@product_display:block:field_product:field_wholesale_price:amount';
-  $facet->searcher = 'search_api@product_display';
-  $facet->realm = 'block';
-  $facet->facet = 'field_product:field_wholesale_price:amount';
-  $facet->enabled = FALSE;
-  $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_links',
-    'filters' => array(),
-    'active_sorts' => array(
-      'active' => 'active',
-      'count' => 'count',
-      'display' => 'display',
-    ),
-    'sort_weight' => array(
-      'active' => -50,
-      'count' => -49,
-      'display' => -48,
-    ),
-    'sort_order' => array(
-      'active' => 3,
-      'count' => 3,
-      'display' => 4,
-    ),
-    'empty_behavior' => 'none',
-    'soft_limit' => 20,
-    'nofollow' => 1,
-    'show_expanded' => 0,
-  );
-  $export['search_api@product_display:block:field_product:field_wholesale_price:amount'] = $facet;
-
-  $facet = new stdClass();
-  $facet->disabled = FALSE; /* Edit this to true to make a default facet disabled initially */
-  $facet->api_version = 1;
-  $facet->name = 'search_api@product_display:block:field_product:field_wholesale_price:amount_decimal';
-  $facet->searcher = 'search_api@product_display';
-  $facet->realm = 'block';
-  $facet->facet = 'field_product:field_wholesale_price:amount_decimal';
-  $facet->enabled = TRUE;
-  $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'search_api_ranges_ui_slider',
-    'filters' => array(
-      'active_items' => array(
-        'status' => 1,
-        'weight' => -1,
-      ),
-    ),
-    'active_sorts' => array(
-      'active' => 'active',
-      'count' => 'count',
-      'display' => 'display',
-    ),
-    'sort_weight' => array(
-      'active' => -50,
-      'count' => -49,
-      'display' => -48,
-    ),
-    'sort_order' => array(
-      'active' => 3,
-      'count' => 3,
-      'display' => 4,
-    ),
-    'empty_behavior' => 'none',
-    'soft_limit' => 20,
-    'nofollow' => 1,
-    'show_expanded' => 0,
-    'name' => '',
-    'prefix' => '',
-    'suffix' => '',
-    'auto-submit-delay' => 1500,
-  );
-  $export['search_api@product_display:block:field_product:field_wholesale_price:amount_decimal'] = $facet;
-
-  $facet = new stdClass();
-  $facet->disabled = FALSE; /* Edit this to true to make a default facet disabled initially */
-  $facet->api_version = 1;
   $facet->name = 'search_api@product_display:block:field_product:sku';
   $facet->searcher = 'search_api@product_display';
   $facet->realm = 'block';
@@ -1603,74 +1526,6 @@ function inkshop_search_facetapi_default_facet_settings() {
     'show_expanded' => 0,
   );
   $export['search_api@product_display:block:field_product:type'] = $facet;
-
-  $facet = new stdClass();
-  $facet->disabled = FALSE; /* Edit this to true to make a default facet disabled initially */
-  $facet->api_version = 1;
-  $facet->name = 'search_api@product_display:block:field_product_commerce_price_amount_decimal_asc';
-  $facet->searcher = 'search_api@product_display';
-  $facet->realm = 'block';
-  $facet->facet = 'field_product_commerce_price_amount_decimal_asc';
-  $facet->enabled = FALSE;
-  $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_links',
-    'filters' => array(),
-    'active_sorts' => array(
-      'active' => 'active',
-      'count' => 'count',
-      'display' => 'display',
-    ),
-    'sort_weight' => array(
-      'active' => -50,
-      'count' => -49,
-      'display' => -48,
-    ),
-    'sort_order' => array(
-      'active' => 3,
-      'count' => 3,
-      'display' => 4,
-    ),
-    'empty_behavior' => 'none',
-    'soft_limit' => 20,
-    'nofollow' => 1,
-    'show_expanded' => 0,
-  );
-  $export['search_api@product_display:block:field_product_commerce_price_amount_decimal_asc'] = $facet;
-
-  $facet = new stdClass();
-  $facet->disabled = FALSE; /* Edit this to true to make a default facet disabled initially */
-  $facet->api_version = 1;
-  $facet->name = 'search_api@product_display:block:field_product_commerce_price_amount_decimal_desc';
-  $facet->searcher = 'search_api@product_display';
-  $facet->realm = 'block';
-  $facet->facet = 'field_product_commerce_price_amount_decimal_desc';
-  $facet->enabled = FALSE;
-  $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_links',
-    'filters' => array(),
-    'active_sorts' => array(
-      'active' => 'active',
-      'count' => 'count',
-      'display' => 'display',
-    ),
-    'sort_weight' => array(
-      'active' => -50,
-      'count' => -49,
-      'display' => -48,
-    ),
-    'sort_order' => array(
-      'active' => 3,
-      'count' => 3,
-      'display' => 4,
-    ),
-    'empty_behavior' => 'none',
-    'soft_limit' => 20,
-    'nofollow' => 1,
-    'show_expanded' => 0,
-  );
-  $export['search_api@product_display:block:field_product_commerce_price_amount_decimal_desc'] = $facet;
 
   $facet = new stdClass();
   $facet->disabled = FALSE; /* Edit this to true to make a default facet disabled initially */
@@ -2088,42 +1943,6 @@ function inkshop_search_facetapi_default_facet_settings() {
     'facet_fewer_text' => 'Show fewer',
   );
   $export['search_api@product_display:block:search_api_aggregation_5'] = $facet;
-
-  $facet = new stdClass();
-  $facet->disabled = FALSE; /* Edit this to true to make a default facet disabled initially */
-  $facet->api_version = 1;
-  $facet->name = 'search_api@product_display:block:search_api_aggregation_6';
-  $facet->searcher = 'search_api@product_display';
-  $facet->realm = 'block';
-  $facet->facet = 'search_api_aggregation_6';
-  $facet->enabled = FALSE;
-  $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_links',
-    'filters' => array(),
-    'active_sorts' => array(
-      'active' => 'active',
-      'count' => 'count',
-      'display' => 'display',
-    ),
-    'sort_weight' => array(
-      'active' => -50,
-      'count' => -49,
-      'display' => -48,
-    ),
-    'sort_order' => array(
-      'active' => 3,
-      'count' => 3,
-      'display' => 4,
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => 20,
-    'nofollow' => 1,
-    'show_expanded' => 0,
-  );
-  $export['search_api@product_display:block:search_api_aggregation_6'] = $facet;
 
   $facet = new stdClass();
   $facet->disabled = FALSE; /* Edit this to true to make a default facet disabled initially */

@@ -28,6 +28,7 @@ function inkshop_search_strongarm() {
       'search_api_views:display_products:aehnliche_produkte_auto' => 'search_api_views:display_products:aehnliche_produkte_auto',
       'search_api_views:display_products:search_api_views_facets_block_4' => 'search_api_views:display_products:search_api_views_facets_block_4',
       'search_api_views:display_products:page_2' => 'search_api_views:display_products:page_2',
+      'search_api_autocomplete:search_api_views_display_products' => 'search_api_autocomplete:search_api_views_display_products',
     ),
   );
   $export['search_api_facets_search_ids'] = $strongarm;

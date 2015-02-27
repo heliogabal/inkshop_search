@@ -12,6 +12,40 @@ function inkshop_search_default_fe_block_settings() {
 
   $export['version'] = '2.0';
 
+  $export['current_search-search_results'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'search_results',
+    'icon' => NULL,
+    'module' => 'current_search',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'adminimal' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'adminimal',
+        'weight' => -34,
+      ),
+      'inkshop' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'inkshop',
+        'weight' => -39,
+      ),
+      'omega' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'omega',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   $export['facetapi-4MnuqsU9U0F81nBMXnQt67Y06gEKf0TG'] = array(
     'cache' => -1,
     'css_class' => '',
@@ -214,6 +248,42 @@ function inkshop_search_default_fe_block_settings() {
     ),
     'title' => 'Format',
     'visibility' => 0,
+  );
+
+  $export['search_api_sorts-search-sorts'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'search-sorts',
+    'icon' => 'a:2:{s:4:"icon";s:0:"";s:8:"position";s:12:"title_before";}',
+    'module' => 'search_api_sorts',
+    'node_types' => array(),
+    'pages' => '<front>
+produkte
+produkte/*',
+    'roles' => array(),
+    'themes' => array(
+      'adminimal' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'adminimal',
+        'weight' => -32,
+      ),
+      'inkshop' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'inkshop',
+        'weight' => -37,
+      ),
+      'omega' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'omega',
+        'weight' => 4,
+      ),
+    ),
+    'title' => 'Sortieren nach:',
+    'visibility' => 1,
   );
 
   $export['views--exp-display_products-page'] = array(
