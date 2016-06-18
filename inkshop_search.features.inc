@@ -27,34 +27,6 @@ function inkshop_search_views_api($module = NULL, $api = NULL) {
 }
 
 /**
- * Implements hook_default_search_api_autocomplete_search().
- */
-function inkshop_search_default_search_api_autocomplete_search() {
-  $items = array();
-  $items['search_api_views_display_products'] = entity_import('search_api_autocomplete_search', '{
-    "machine_name" : "search_api_views_display_products",
-    "name" : "Display Products",
-    "index_id" : "product_display",
-    "type" : "search_api_views",
-    "enabled" : "1",
-    "options" : {
-      "result count" : true,
-      "fields" : [
-        "body:value",
-        "search_api_aggregation_1",
-        "search_api_aggregation_2",
-        "search_api_aggregation_3",
-        "search_api_aggregation_4",
-        "search_api_aggregation_5"
-      ],
-      "results" : 0,
-      "custom" : { "display" : "page" }
-    }
-  }');
-  return $items;
-}
-
-/**
  * Implements hook_default_search_api_server().
  */
 function inkshop_search_default_search_api_server() {
@@ -65,7 +37,7 @@ function inkshop_search_default_search_api_server() {
     "description" : "",
     "class" : "search_api_db_service",
     "options" : { "database" : "default:default", "min_chars" : "3", "indexes" : [] },
-    "enabled" : "0"
+    "enabled" : "1"
   }');
   $items['solr'] = entity_import('search_api_server', '{
     "name" : "SOLR",
@@ -79,7 +51,7 @@ function inkshop_search_default_search_api_server() {
       "scheme" : "http",
       "host" : "127.0.0.1",
       "port" : "8099",
-      "path" : "\\/solr\\/core1",
+      "path" : "\\/solr\\/d41d8cd98f00b204e9800998ecf8427e.shop.dev.inkota.de.o4507778742",
       "http_user" : "",
       "http_pass" : "",
       "excerpt" : 0,
@@ -104,10 +76,10 @@ function inkshop_search_default_search_api_sort() {
     "field" : "created",
     "name" : "Datum",
     "enabled" : "1",
-    "weight" : "1",
+    "weight" : "-95",
     "identifier" : "product_display__created",
     "default_sort" : "1",
-    "default_sort_no_terms" : "0",
+    "default_sort_no_terms" : "1",
     "default_order" : "desc",
     "options" : { "field_name" : "Erstellungsdatum" }
   }');
@@ -116,7 +88,7 @@ function inkshop_search_default_search_api_sort() {
     "field" : "title_field",
     "name" : "Titel",
     "enabled" : "1",
-    "weight" : "0",
+    "weight" : "-96",
     "identifier" : "product_display__title_field",
     "default_sort" : "0",
     "default_sort_no_terms" : "0",
