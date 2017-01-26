@@ -81,7 +81,7 @@ function inkshop_search_default_search_api_sort() {
     "default_sort" : "1",
     "default_sort_no_terms" : "1",
     "default_order" : "desc",
-    "options" : { "field_name" : "Erstellungsdatum" }
+    "options" : { "field_name" : "Date created" }
   }');
   $items['product_display__title_field'] = entity_import('search_api_sort', '{
     "index_id" : "product_display",

@@ -1,7 +1,7 @@
 name = inkshop search
 core = 7.x
 package = Features
-version = 7.x-1.13-beta1
+version = 7.x-1.15
 project = inkshop_search
 dependencies[] = ctools
 dependencies[] = current_search
