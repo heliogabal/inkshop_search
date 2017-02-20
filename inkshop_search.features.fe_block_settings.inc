@@ -155,7 +155,7 @@ produkte/*',
         'region' => 'content',
         'status' => 1,
         'theme' => 'inkshop',
-        'weight' => -37,
+        'weight' => -39,
       ),
       'omega' => array(
         'region' => '',

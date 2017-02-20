@@ -80,8 +80,7 @@ function inkshop_search_default_search_api_sort() {
     "identifier" : "product_display__created",
     "default_sort" : "1",
     "default_sort_no_terms" : "1",
-    "default_order" : "desc",
-    "options" : { "field_name" : "Date created" }
+    "default_order" : "desc"
   }');
   $items['product_display__title_field'] = entity_import('search_api_sort', '{
     "index_id" : "product_display",
@@ -92,8 +91,7 @@ function inkshop_search_default_search_api_sort() {
     "identifier" : "product_display__title_field",
     "default_sort" : "0",
     "default_sort_no_terms" : "0",
-    "default_order" : "asc",
-    "options" : { "field_name" : "Title" }
+    "default_order" : "asc"
   }');
   return $items;
 }
