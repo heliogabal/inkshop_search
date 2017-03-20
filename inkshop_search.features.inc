@@ -51,7 +51,7 @@ function inkshop_search_default_search_api_server() {
       "scheme" : "http",
       "host" : "127.0.0.1",
       "port" : "8099",
-      "path" : "\\/solr\\/d41d8cd98f00b204e9800998ecf8427e.shop.dev.inkota.de.o4507778742",
+      "path" : "\\/solr\\/d41d8cd98f00b204e9800998ecf8427e.webshop.inkota.de.o4507778742",
       "http_user" : "",
       "http_pass" : "",
       "excerpt" : 0,
@@ -59,7 +59,9 @@ function inkshop_search_default_search_api_server() {
       "highlight_data" : 0,
       "skip_schema_check" : 0,
       "solr_version" : "",
-      "http_method" : "AUTO"
+      "http_method" : "AUTO",
+      "log_query" : 0,
+      "log_response" : 0
     },
     "enabled" : "1"
   }');
